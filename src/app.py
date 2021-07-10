@@ -66,7 +66,7 @@ class SparkApp(Log4j, SparkSession):
                 'fs.gs.auth.service.account.enable', 'true')
             session._jsc.hadoopConfiguration().set(
                 'google.cloud.auth.service.account.json.keyfile', 
-                '.credential/proj-spark-04470075380c.json')
+                'google_service_account_key.json')
             # For BigQuery Connector
             session.conf.set('parentProject', config['gcp_projct'])
         return session
