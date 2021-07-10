@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# https://github.com/GoogleCloudDataproc/spark-bigquery-connector#downloading-the-connector
-
-#   --jars gs://spark-lib/bigquery/spark-bigquery-latest_2.12.jar \
-# !pip install folium
 create_cluster() {
 
     echo "Creating cluster...."
