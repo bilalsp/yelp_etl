@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "proj-spark",
+  "private_key_id": "04470075380c30de25cfc56c0aa46be43d7d5fa8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0Qka3mtx4uj0j\nLp1rYK/lSpjaKZyj3r001XziY+odt+MopZCESscvBX/LSIK0yZnfv6sTLALivZN0\nJsZEif6cGejAA4u/ciP5dVZKFyKojk/A1Jjm+5SQKxQr64rTpPXP+SFAizTLQcgY\nIGmO7GTtY1OSvuyZcgjLcgKYR8i/EO+vknJ0tq7wakVwo97oOgEzKpJYfpP/Qo0i\nSnZrLQcf0q6YP4USiuKv/nPQex+lsTwI8AOsS24zC03a2hTAdowlmncqw4a/D7Jn\nWfABikaByA+8QSjOq2oxddudcvOBGeIBmqsyeoWSkrmxuX8GY/fuG7SnwbnmystN\nh9Dr2mKzAgMBAAECggEAMWmdkwULfLiou7Uyh9XIQdVyExOnEbCkMxB2nGSBL8ZR\nqbnA5NLOyQ/72RC2a7J70L7suWOuItOO0R8z6GPffJEJoWEXdNJoFCDbF5JB+OyR\n5i0hAOhj8CUu8V8u/hdRHsKPH+9I+JK+tAZmiTw56mz44tgdaW6+BG7rUS0UVXNr\n9YuI9+YFg7Lemc4tVnEoSrc6KeqHK/0bdDveUg/Lu/SIYm1cE/KFGx0pDnZynrKj\n88gV32V8RmawqKDZWCv2FjrB9CjQDSQLprhtWbrWy7Dv1m8kBheLc1kDrasMxfD1\nasITC4u/V37KfnWh4rJMhZMMKfHikyi+b7Od6DOKAQKBgQDnmCwNoWxeMvGwWBxQ\nJwvENmn+93Ae+8CBeM3Blrekudb+P4cMZ3P1PT1dmRD56vCkKux/ktFbDbfkkKKF\nP3x1Qpdjmn43kaw9XcilpKRZmYMaDwasX8H7/+UR79Wg2FdnLr4piQTz9X1e6ezg\nD92VVIrCar3WNHQTesR276bPswKBgQDHQTPFUdgVAiZ0ro5TBjqN0JHv+R8zEmjR\nHlT74Y10lbd0kZTahKnJW8BFqOwiUlqGpbYzaNgHfbCtHXNlewB4PVSODqDRwATX\nMbkErbFK/fYqDduIQeNheE9SwLacN60SP1pzPxYjfJd4i4UyBIBiANAl/oOpQc1w\no3eBNByhAQKBgH1VSgn6YRY9hbTEilYKO4DtXcGhESmDXvPyd4+bzDi2ZhZkNObO\nmd+PS8V6j8hgj+iYXjLQNsKLEwj8CSgJaoZfCmTZ+BKEoGz5cxvJlTP0MxIILbld\nfTKukr55R+hrDCoIDtuVjnukUDvsZsf/bhBhl1KNx7zD2Emud+JR4bmnAoGAJQKS\naCtMlJJirDekDf3RMHg2Mzm1ttnLiFQ2+tYpXSdV/RvxZylPFCyrqQS4X6OmVu4+\nyovF3JZXE8Ctp4LSUoMpyn0jF/Kvs3zz3c+ZZ9GGQMd0KHn8jyU2rqtG//tDdWk5\nFsD4Dr1csTJRGjpF0m5OO1BsCitDypFCaEhSrQECgYEAw51H6NztLvrJ908L0BEe\n1qahc2o+65W2l07VDdn8Gz0bqvaZzj5BgJuSXvW3qtx7mAASOS90g4MAPpHlcIQm\n8UEy9M+LsXzeDOSg/V/DUmK3oJUPUpVrC80ZqQ4ob/EFyOvMLl6EBJRQJzFdVlxh\naSVfBFx5M2Iy6KP8/oygIH4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "circleci-2@proj-spark.iam.gserviceaccount.com",
+  "client_id": "112096894196200136667",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/circleci-2%40proj-spark.iam.gserviceaccount.com"
+}

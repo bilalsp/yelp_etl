@@ -1,0 +1,39 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/repo
+    
+    docker:
+      - image: cimg/python:3.8
+        environment:
+          PIPENV_VENV_IN_PROJECT: true
+          APP_MODE: circleci
+    
+    steps:
+      - checkout
+
+      - run:
+          name: Install OpenJDK
+          command: |
+            sudo apt-get update && sudo apt-get install default-jdk -y
+
+      - run: sudo chown -R circleci:circleci /usr/local/bin
+
+      - restore_cache:  
+          key: deps19-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
+
+      - run:
+          name: Install Dependencies
+          command: |
+            pipenv install --dev
+
+      - save_cache:
+          key: deps19-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
+          paths:
+            - ".venv"
+            - "/usr/local/bin"
+  
+      - run:
+          name: Running tests
+          command: |
+            pipenv run pytest

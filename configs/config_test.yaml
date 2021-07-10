@@ -1,0 +1,32 @@
+# Yelp spark application configuration file for testcases
+
+app_name: Yelp_ETL_Test
+gcp_projct: proj-spark
+temporaryGcsBucket_for_BigQuery: proj-spark
+jobs:
+  TopUsers:
+    table: yelp_test.top_users
+  BusinessCat:
+    table: yelp_test.business_categories
+  TopBusinesses:
+    table: yelp_test.top_businesses
+  TopRestaurants:
+    table: yelp_test.top_restaurants
+    state: MA
+source_data_path:
+  user: gs://proj-spark/yelp-test-dataset/yelp_academic_dataset_user.json
+  review: gs://proj-spark/yelp-test-dataset/yelp_academic_dataset_review.json
+  checkin: gs://proj-spark/yelp-test-dataset/yelp_academic_dataset_checkin.json
+  business: gs://proj-spark/yelp-test-dataset/yelp_academic_dataset_business.json
+expected_data_path:
+  TestSuiteTopUser: 
+    test_top_users: tests/test_data/expected_data/top_users.csv
+  TestSuiteBusinessCat:
+    test_busineess_categories: tests/test_data/expected_data/business_categories.csv
+  TestSuiteTopBusinesses:
+    test_top_businesses: tests/test_data/expected_data/top_businesses.csv
+  TestSuiteTopRestaurants:
+    test_top_restaurants: tests/test_data/expected_data/top_restaurants.csv
+connector_paths:
+  gcs: .circleci/connectors/gcs-connector-hadoop2-2.1.1.jar
+  bigquery: .circleci/connectors/spark-bigquery-latest_2.12.jar

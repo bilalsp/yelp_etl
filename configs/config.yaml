@@ -1,0 +1,25 @@
+# Yelp spark application configuration file
+
+app_name: Yelp_ETL
+gcp_projct: proj-spark
+temporaryGcsBucket_for_BigQuery: proj-spark
+source_data_path:
+  # user: gs://proj-spark/yelp-dataset/yelp_academic_dataset_user.json
+  # review: gs://proj-spark/yelp-dataset/yelp_academic_dataset_review.json
+  # checkin: gs://proj-spark/yelp-dataset/yelp_academic_dataset_checkin.json
+  # business: gs://proj-spark/yelp-dataset/yelp_academic_dataset_business.json
+  user: gs://proj-spark/yelp-test-dataset/yelp_academic_dataset_user.json
+  review: gs://proj-spark/yelp-test-dataset/yelp_academic_dataset_review.json
+  checkin: gs://proj-spark/yelp-test-dataset/yelp_academic_dataset_checkin.json
+  business: gs://proj-spark/yelp-test-dataset/yelp_academic_dataset_business.json
+jobs:
+  TopUsers:
+    table: yelp.top_users
+  BusinessCat:
+    table: yelp.business_categories
+  TopBusinesses:
+    table: yelp.top_businesses
+  TopRestaurants:
+    table: yelp.top_restaurants
+    state: MA
+logger_config: /user/mohammedbilalansari_321/proj-spark-log
